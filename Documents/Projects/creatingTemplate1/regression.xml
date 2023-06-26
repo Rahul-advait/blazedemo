@@ -3,8 +3,7 @@
 <suite name="Regression Test" parallel="false">
     <test name="Milestone 1" preserve-order="true">
         <classes>
-            <class name="org.example.CoreAutomation"/>
-            <class name="org.example.VerifyPurchaseTicket"/>
+            <class name="org.example.TestClass"/>
         </classes>
     </test>
 </suite>

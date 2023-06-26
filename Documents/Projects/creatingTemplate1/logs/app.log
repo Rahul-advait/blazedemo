@@ -1,0 +1,45 @@
+08:06:44.477 INFO  base.CustomDriver getByType -Found byType :linkText=>destination of the week! The Beach!
+08:06:44.538 INFO  base.CustomDriver getElement -Found element: linkText=>destination of the week! The Beach!
+08:06:44.648 INFO  base.CustomDriver getByType -Found byType :linkText=>destination of the week! The Beach!
+08:06:44.674 INFO  base.CustomDriver getElement -Found element: linkText=>destination of the week! The Beach!
+08:06:56.115 INFO  base.CustomDriver elementClick -Clicked element
+08:06:57.034 INFO  base.CustomDriver getByType -Found byType :name=>fromPort
+08:06:57.061 INFO  base.CustomDriver getElement -Found element: name=>fromPort
+08:06:57.142 INFO  base.CustomDriver elementClick -Clicked element
+08:06:57.143 INFO  base.CustomDriver getByType -Found byType :name=>fromPort
+08:06:57.175 INFO  base.CustomDriver getElement -Found element: name=>fromPort
+08:06:57.207 INFO  base.CustomDriver waitForElement -Waiting for element presence: [[ChromeDriver: chrome on WINDOWS (b5b31e218d5cfdc2677301074cf2183b)] -> name: fromPort]
+08:06:57.241 INFO  base.CustomDriver waitForElement -Wait is over for element: [[ChromeDriver: chrome on WINDOWS (b5b31e218d5cfdc2677301074cf2183b)] -> name: fromPort]
+08:06:57.367 INFO  base.CustomDriver getByType -Found byType :name=>toPort
+08:06:57.390 INFO  base.CustomDriver getElement -Found element: name=>toPort
+08:06:57.480 INFO  base.CustomDriver elementClick -Clicked element
+08:06:57.481 INFO  base.CustomDriver getByType -Found byType :name=>toPort
+08:06:57.498 INFO  base.CustomDriver getElement -Found element: name=>toPort
+08:06:57.517 INFO  base.CustomDriver waitForElement -Waiting for element presence: [[ChromeDriver: chrome on WINDOWS (b5b31e218d5cfdc2677301074cf2183b)] -> name: toPort]
+08:06:57.539 INFO  base.CustomDriver waitForElement -Wait is over for element: [[ChromeDriver: chrome on WINDOWS (b5b31e218d5cfdc2677301074cf2183b)] -> name: toPort]
+08:06:57.631 INFO  base.CustomDriver getByType -Found byType :cssSelector=>input
+08:06:57.632 INFO  base.CustomDriver waitClick -Waiting for element to be clickable: cssSelector=>input
+08:06:57.684 INFO  base.CustomDriver waitClick -Wait is over for element: cssSelector=>input
+08:06:57.698 INFO  base.CustomDriver getElement -Found element: By.cssSelector: input
+08:06:58.479 INFO  base.CustomDriver waitClick -Clicked element
+08:06:58.482 INFO  base.CustomDriver getByType -Found byType :xpath=>//tbody/tr[1]/td[6]
+08:06:58.518 INFO  base.CustomDriver getElement -Found element: xpath=>//tbody/tr[1]/td[6]
+08:06:58.551 INFO  base.CustomDriver getByType -Found byType :xpath=>//tbody/tr[2]/td[6]
+08:06:58.577 INFO  base.CustomDriver getElement -Found element: xpath=>//tbody/tr[2]/td[6]
+08:06:58.596 INFO  base.CustomDriver getByType -Found byType :xpath=>//tbody/tr[3]/td[6]
+08:06:58.624 INFO  base.CustomDriver getElement -Found element: xpath=>//tbody/tr[3]/td[6]
+08:06:58.639 INFO  base.CustomDriver getByType -Found byType :xpath=>//tbody/tr[4]/td[6]
+08:06:58.658 INFO  base.CustomDriver getElement -Found element: xpath=>//tbody/tr[4]/td[6]
+08:06:58.672 INFO  base.CustomDriver getByType -Found byType :xpath=>//tbody/tr[5]/td[6]
+08:06:58.692 INFO  base.CustomDriver getElement -Found element: xpath=>//tbody/tr[5]/td[6]
+08:06:58.707 INFO  base.CustomDriver getByType -Found byType :xpath=>//tbody/tr[3]/td[1]/input
+08:06:58.726 INFO  base.CustomDriver getElement -Found element: xpath=>//tbody/tr[3]/td[1]/input
+08:06:59.405 INFO  base.CustomDriver elementClick -Clicked element
+08:06:59.418 INFO  base.Checklist setStatus -Purchase is open=>Pass
+08:06:59.419 INFO  base.CustomDriver getByType -Found byType :xpath=>//div[@class='container']/p[5]
+08:06:59.444 INFO  base.CustomDriver getElement -Found element: xpath=>//div[@class='container']/p[5]
+08:06:59.480 INFO  base.CustomDriver getByType -Found byType :cssSelector=>em
+08:06:59.507 INFO  base.CustomDriver getElement -Found element: cssSelector=>em
+08:06:59.530 INFO  base.Checklist setStatus -Total cost present and correct formata=>Pass
+08:06:59.530 INFO  base.Checklist markFinal -Test Method Successful
+08:06:59.531 INFO  base.Checklist markFinal -Test Method Successful

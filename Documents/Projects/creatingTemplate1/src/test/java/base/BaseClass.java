@@ -1,17 +1,23 @@
 package base;
 
+import PageClasses.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import resources.Constants;
+import utilities.Constants;
 
 public class BaseClass {
-    public WebDriver driver;
+    protected WebDriver driver;
+    protected HomePage homePage;
 
     @BeforeClass
     public void setUP() {
-        driver = CustomDriver.useChrome();
+        driver = WebDriverFactory.useChrome();
         driver.get(Constants.BASE_URL);
+        homePage = new HomePage(driver);
+        if (!homePage.getDESTINATION_LINK().isDisplayed()){
+            driver.navigate().refresh();
+        }
     }
 
     @AfterClass

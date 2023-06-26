@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class CustomDriver {
+public class WebDriverFactory {
     private WebDriver driver;
     public static WebDriver useChrome() {
         System.setProperty("webdriver.chrome.driver" ,
