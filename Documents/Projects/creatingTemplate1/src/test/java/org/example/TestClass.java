@@ -1,5 +1,6 @@
 package org.example;
 
+import PageClasses.ConfirmationPage;
 import PageClasses.Purchase;
 import PageClasses.Reserve;
 import PageClasses.Vacation;
@@ -14,15 +15,20 @@ import static org.testng.Assert.assertTrue;
 public class TestClass extends BaseClass {
     Reserve reservePage;
     Purchase purchase;
+    ConfirmationPage confirmationPage;
+    Vacation vacation;
 
     @AfterMethod
     public void navigateToHomepage() {
-        driver.navigate().to(Constants.BASE_URL);
+        if (vacation.isOpen()) {
+            driver.navigate().to(Constants.BASE_URL);
+        }
+        Checklist.clearHashMap();
     }
 
     @Test
     public void verifyDestinationLink() {
-        Vacation vacation = homePage.clickDestinationLink();
+        vacation = homePage.clickDestinationLink();
         boolean result = vacation.isOpen();
         assertTrue(result);
     }
@@ -38,5 +44,13 @@ public class TestClass extends BaseClass {
 
         boolean totalCost = purchase.isTotalCostPresent();
         Checklist.markFinal("Total cost present and correct formata", totalCost);
+    }
+
+    @Test(dependsOnMethods = "verifyPurchasePage")
+    public void checkConfirmation() {
+        confirmationPage = purchase.clickPurchase();
+        boolean confirmPage = confirmationPage.isOpen();
+        confirmationPage.storeId();
+        assertTrue(confirmPage);
     }
 }

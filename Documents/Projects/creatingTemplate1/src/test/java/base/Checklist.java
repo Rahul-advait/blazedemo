@@ -24,6 +24,11 @@ public class Checklist {
         }
     }
 
+    public static void clearHashMap(){
+        log.info("Clearing result Hashmap");
+        resultMap.clear();
+    }
+
 
     public static void mark(String testName, boolean result) {
         try {

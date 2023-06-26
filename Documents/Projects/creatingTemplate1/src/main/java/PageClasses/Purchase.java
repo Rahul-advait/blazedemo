@@ -11,6 +11,8 @@ public class Purchase extends BasePage {
     private String URL = "purchase";
     private String PRICE = "cssSelector=>em";
 
+    private String PURCHASE = "cssSelector=>[type='submit']";
+
     public Purchase(WebDriver driver) {
         super(driver);
         this.driver = driver;
@@ -32,4 +34,11 @@ public class Purchase extends BasePage {
         String costValue = getElement(PRICE, info).getText();
         return Pattern.matches(pattern, costValue);
     }
+
+    public ConfirmationPage clickPurchase(){
+        elementClick(PURCHASE, "Purchase flight btn");
+        return new ConfirmationPage(driver);
+    }
+
+
 }
